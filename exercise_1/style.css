@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color: mediumseagreen;
+}
+h1{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid white;
+	vertical-align: middle;
+	border-radius: 10px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 2em;
+}
+#output{
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+

@@ -1,0 +1,6 @@
+// JavaScript Document
+
+
+let outputValue = ((9.5 * 4.5) - (2.5 * 3))/(45.5-3.5);
+
+document.getElementById("output").innerHTML = outputValue;

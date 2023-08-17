@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jump</title>
+	<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+	<div id="game"><div id="scoreMenu">
+		<div id="highScore">High score: 0</div>
+		<div id="score">Your score: 0</div>
+		</div>
+		<div id="loseGame" class="hidden">YOU LOSE</div>
+		<div class="character"></div>
+		<div class="block"><img class="enemy" src="assets/ball-1.png"></div>
+		<div class="flying flyingAnim"><img class="flyingEnemy" src="assets/flying-1.png"></div>
+		<div id="bgContainer">
+		<div class="background"></div>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="text" id="btnJump"><p>Jump</p></div>
+		<div class="text" id="btnReset" onClick="resetFunction()"><p>Reset</p></div>
+	</div>
+	<script src="assets/script.js"></script>
+</body>
+</html>

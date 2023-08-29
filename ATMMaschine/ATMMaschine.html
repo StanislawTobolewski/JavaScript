@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ATM Maschine</title>
+	<link rel="stylesheet" href="ATMStyle.css">
+</head>
+
+<body>
+	<!------------START SCREEN----------->
+	<div id="startScreen" class="">
+	<h1 class="header">Welcome in<br>STS ATM Maschine</h1>
+		<div id="btnStart" class="btn">Press to start</div>
+	</div>
+	<!------------MENU SCREEN----------->
+	<div id="menuScreen" class="hidden">
+		<h1 class="header">Select an operation</h1>
+		<div id="left">
+		<div id="btnAccountBallance" class="btn">Account Ballance</div>
+		<div id="btnWithdraw" class="btn">Withdraw</div>
+		<div id="btnWithdrawBLIK" class="btn, notWork">Withdraw BLIK</div>
+		</div>
+		<div id="right">
+		<div id="btnDeposit" class="btn">Deposit</div>
+		<div id="btnDepositBLIK" class="btn, notWork">Deposit BLIK</div>
+		<div id="btnCheckData" class="btn">Check data</div>
+		</div>
+		<div id="btnCancel" class="btn">Cancel</div>
+	</div>
+	<!------------CARD & LOGIN SCREEN----------->
+	<div id="loginScreen" class="hidden">
+		<h1 class="header">Insert your card</h1>
+		<div id="cardInsertContainer">
+			<label for="cardInsert" id="lblCardInsert" class="lbl">Card inserted:</label>
+			<input type="checkbox" id="cardInsert">
+		</div>
+		<div id="cardNumberContainer" class="hidden">
+			<label for="cardNumberIn" id="lblCardNumberIn" class="lbl">Card number: </label>
+			<input type="password" id="cardNumberIn">
+		</div>	
+		<div id="pinInsertContainer" class="hidden">
+			<label for="pinInsert" id="lblPinInsert" class="lbl">PIN:</label>
+			<input type="password" id="pinInsert">
+		</div>
+		<div id="loginBtnContainer">
+			<div id="btnDataLogin" class="btn">Continue</div>
+			<div id="btnCancLogin" class="btn">Cancel</div>
+		</div>
+	</div>
+	<!------------CLIENT DATA SCREEN----------->
+	<div id="clientDataScreen" class="hidden">
+	<h1 class="header">Welcome</h1>
+	<p class="data" id="dtFName">First name:</p>
+	<p class="data" id="dtSName">Second name:</p>
+	<p class="data" id="dtBalance">Account balance:</p>
+	<p class="data" id="dtNumber">Account number:</p>
+	<p class="data" id="dtCardNr">Card number:</p>
+	<p class="data" id="dtPIN">Pin number:</p>
+	<div id="btnCancData" class="btn">Cancel</div>
+	</div>
+	<!------------DEPOSIT SCREEN -------------->
+	<div id="depositScreen" class="hidden">
+	<h1 class="header">Welcome</h1>
+	<p class="info">Enter cash amount you want to deposit:</p>
+		<div class="depositContainer">
+			<input type="number" id="depositAmount" class="deposit">
+		</div>
+	<p class="info">Enter cash simulation <br>( declarated = deposit  ?)</p>
+		<div class="depositContainer">
+			<input type="number" id="depositConfirm" class="deposit">	
+		</div>
+		<div id="btnConfirmDepo" class="btn">Continue</div>
+		<div id="btnCancDepo" class="btn">Cancel</div>
+	</div>
+	<!-------------WITHDRAW SCREEN----------------->
+	<div id="withdrawScreen" class="hidden">
+		<p class="info">Enter cash amount you want to withdraw:</p>
+		<div class="withdrawContainer">
+			<input type="number" id="withdrawAmount" class="deposit" value="0">
+		</div>
+		<div id="btnConfirmWithdraw" class="btn">Continue</div>
+		<div id="btnCancWithdraw" class="btn">Cancel</div>
+	</div>
+	
+	<!-------------INFO SCREEN -------------------->
+	<div id="infoScreen" class="hidden">
+		<p id="infoText">HELLO</p>
+		<div id="btnCancInfo">Ok</div>
+	</div>
+	
+	<div style="width: 700px; margin-left: auto; margin-right: auto; position:absolute; top: 800px; 100%; color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; text-align: center;">
+	<p>Client 1: "John", "Kovalsky", 3000, 911234000000049876, 11111111, 1111</p>
+	<p>Client 2: "Andy", "Novak", 5000, 873234000000019876, 22222222, 2222</p>
+	<p>ATM Casch: 10 000 $</p>
+		</div>
+	<script src="ATMScript.js"></script>
+</body>
+</html>

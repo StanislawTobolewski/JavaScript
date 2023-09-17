@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: beige;
+}
+
+.hidden{
+	display: none;
+}
+
+.lifes{
+	color:aliceblue;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 2em;
+	line-height: 1em;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: tomato;
+	border-radius: 10px;
+}
+
+#players{
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color:steelblue;
+	text-transform: uppercase;
+	font-weight: 600;	
+}
+
+#showInfo{
+	width: 600px;
+	text-align: center;
+	position: fixed;
+	top: 200px;
+	height: auto;
+	background-color: tomato;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1.5em;
+	color: aliceblue;
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	cursor:pointer;
+}
+
+#gameContainer{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	align-content: center;
+}
+
+#compBoard{
+	float: left;
+	margin-left: 20px;
+}
+
+#playerBoard{
+	float: left;
+	margin-right: 20px;
+}
+
+#headerContainer{
+	width: auto;
+	height: 3em;
+	margin-bottom: 20px;
+}
+
+#content{
+	align-content: center;
+	text-align: center;
+	min-width: 800px;
+	display:block;
+}
+
+#btnContainer{
+	width: 100%;
+	align-content: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.btn{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: aliceblue;
+	background-color: tomato;
+	border-radius: 10px;
+	width: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline;
+	font-size: 1.5em;
+	margin-top: 10px;
+	margin-left: 20px;
+	mar
+	cursor: grab;
+}
+
+.btn:hover{
+	cursor: grab;
+	color: tomato;
+	background-color: aliceblue;
+}
+
+#info{
+	min-width: 800px;
+	width: 800px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: tomato;
+	text-align: center;
+	font-size: 1.5em;
+	border: 1px solid tomato;
+	border-radius: 10px;
+}
+
+.compBoardRow{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.compBoardSquare{
+	width: 40px;
+	height: 40px;
+	border: 1px solid beige;
+	float:left;
+	background-image:url("img/bg.jpg");
+	cursor: crosshair;
+}
+
+.playerBoardRow{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.playerBoardSquare{
+	width: 40px;
+	height: 40px;
+	border: 1px solid beige;
+	float:left;
+	background-image:url("img/bg.jpg");
+	cursor: grab;
+}

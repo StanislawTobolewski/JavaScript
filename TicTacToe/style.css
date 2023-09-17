@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image: url("img/bg.jpg");
+	background-repeat: repeat;
+	background-position: -20px;
+}
+
+.hidden{
+	display: none;
+}
+
+#gameContainer{
+	min-width: 306px;
+	width: 306px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title{
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#winner{
+	position:relative;
+	top: -350px;
+	width: 40%;
+	min-width: 300px;
+	height: 100px;
+	background-color: tomato;
+	border-radius: 20px;
+	padding-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	font-size: 2em;
+}
+
+#btnReset{
+	width: 306px;
+	height: 2em;
+	background-color: tomato;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	font-size: 2em;
+	line-height: 2em;
+}
+
+#playersContainer{
+	width: 100%;
+	text-align: center;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#player01, #player02{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	display: inline;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color:pink;
+	border-radius: 10px;
+}
+
+.row{
+	width: 306px;
+	height: auto;
+	display: table;
+	align-content: center;
+	text-align: center;
+}
+
+.tile{
+	width: 100px;
+	height: 100px;
+	float: left;
+	border: 1px solid white;
+	background-image: url("img/empty.jpg");
+}

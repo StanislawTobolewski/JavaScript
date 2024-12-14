@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="Nauka programowania - edytor etykiet" content="Edytor etykiet - wersja: 1.0." />
+  <meta charset="utf-8">
+  <title>Etykiety 101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Stanisław Tobolewski" content="">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/layout01.css">
+</head>
+
+<body>
+  <div id="menu" class="noPrint">
+        <ul>
+            <li class="" id="testing" style="background-color: #8bb8a3;">LABEL SIZE</li>
+            <li id="btnLblData" style="background-color: #4d4e8e;">LABEL DATA</li>
+            <li style="background-color: #e8d6ae;"><label class="file-upload"><input type="file" id="loadLogo" accept=".png, .jpg, .tiff"/>LOAD LOGO</label></li>
+            <li style="background-color: #fc5350;"><label class="file-upload"><input type="file" id="loadBarcode" accept=".svg"/>LOAD BARCODE</label></li>
+            <li id="btnPrint" class="button" style="background-color: #febb65;">PRINT</li>
+        </ul>
+        <p id="showMenu">&#11033;</p>
+        <p id="samples">&#10026;</p>
+    </div>  <!-- menu-end -->
+<div class="appContainer" id="appContainer">
+  <div id="labelContainer">
+    <div id="label">
+        <div id="labelContentContainer">
+            <div id="header">
+                <div id="headerLineOne">
+                    <div id="Name" class="edit-text">PProduct name.</div>
+                    <div id="logo"><img id="logoContainer"/></div>
+                </div>
+                <div id="headerLineTwo">
+                    <div id="additionalName" class="edit-text">Product type.</div>
+                </div>
+            </div>
+            <div id="content" class="edit-text">Product description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br/><br/> Best before:<br/><br/>Date:
+            </div>
+            <div id="weightContainer">
+                <div id="nettWeight"><b>Masa<br/>netto:</b></div>
+                <div id="mass">1000 g</div>
+            </div>
+            <div id="footer">
+                <div id="produceForArea">Produce for<br/>Your company name.</div>
+                <div id="barcode"></div>
+            </div>
+        
+        </div><!-- labelContentContainer end-->
+    </div> <!--label end-->
+  </div> 
+
+</div> <!-- appContainer end-->
+
+<div id="setLblDimension" class="noPrint hidden">
+    <div id="labelSizeImg">
+        <img src="res/pageSizeImage.png">
+    </div>
+    <div id="lblSizeForm">
+        <p id="lblSizeClose" class="button" style="background-color: #fc5350;">CLOSE</p>
+        <form style="margin-left: 30px;">
+			<div style="display:inline;">
+           		<label id="lblPaperSzie" style="color: #EC008C;"><b>Page size width x height (with bleeds):</b></label><br/>
+            	<div class="lblSizeForm-Size"><input id="lblSetSizeWidth" type="number" value="100"><p style="width: fit-content;"> mm x mm </p><input id="lblSetSizeHeight" type="number" value="100"></div><br/><br/>
+				<p style="font-size: .8em; margin-top: -10px;">Eg. if you want label 80 x 120 mm with 3 mm bleeds enter size as: 86 x 126 mm</p>
+			</div>
+            <div class="lblSizeForm-Size"><label id="lblMargin" style="color: #009444;"><b>Margin (inside eg. 3mm):</b></label><br/>
+				<input id="lblSetSizeMargin" type="number" value="3"></div>
+            <div class="lblSizeForm-Size"><label id="lblBleeds" style="color: #1C75BC;"><b>Bleeds (eg. 2 mm):</b></label><br/>
+				<input id="lblSetSizeBleeds" type="number" value="2"></div>   
+            <div id="btnSetPageSize" class="button">SET PAGE</div>
+            <div style="display: flex; flex-direction: row; gap: 20px;">
+                <div id="btnLayout01" class="button" style="background-color: #febb65;">LAYOUT 1</div>
+                <div id="btnLayout02" class="button" style="background-color: #febb65;">LAYOUT 2</div>
+            </div>
+        </form>
+    </div>
+  </div>
+
+  <div id="setLblData" class="hidden">
+    <p id="lblDataClose" class="button" style="background-color: #fc5350;">CLOSE</p>
+    <form class="productInputData">
+		<span class="productInputDataSpan">
+        	<label id="lblProductName" for="lblProductName"><b>Product name: </b></label>
+        	<input id="ProductName" type="text"><div class="fieldSettings" name="ProductName">...</div><br/>
+        </span>
+		<span class="productInputDataSpan">
+			<label id="lblProductType" for="ProductType"><b>Product type: </b></label>
+        	<input id="ProductType" type="text"><div class="fieldSettings" name="ProductType">...</div><br/>
+    	</span>
+        <span class="productInputDataSpan">
+			<label id="lblProductContent" for="ProductContent"><b>Product type: </b></label>
+            <textarea  id="productContent" aria-multiline="true"></textarea><div class="fieldSettings" name="productContent">...</div><br/>
+    	</span>
+        <span class="productInputDataSpan">
+			<label id="lblProductWeight" for="productWeight"><b>Product weight: </b></label>
+        	<input id="productWeight" type="text"><div class="fieldSettings" name="productWeight">...</div><br/>
+    	</span>
+        <span class="productInputDataSpan">
+			<label id="lblProducteFor" for="lblProduceFor"><b>Produced for: </b></label>
+            <textarea  id="ProducedFor" aria-multiline="true"></textarea><div class="fieldSettings" name="producedFor">...</div><br/>
+    	</span>
+        <span style="background-color: #8bb8a3;" class="file-upload button"><label><input type="file" id="btnLoadCsvProductData" accept=".csv"/>LOAD CSV DATA</label></span>
+	</form>
+  </div>
+
+
+  <div id="fieldSettingsWindow" class="noPrint">
+    <div id="fieldSettingsWindowClose">X</div>
+        <div id="fontSettings">
+            
+        </div>   
+  </div>
+
+  <div id="sampleWindow" class="noPrint">
+    <div id="fieldSamplesWindowClose">X</div>
+    <a href="res/" download="logo.png" target="_blank">&#11015; Sample logo file (png)</a><br>
+    <a href="res/" download="barcode.svg" target="_blank">&#11015; Sample barcode file (svg)</a><br>
+    <a href="res/" download="documentTemplateFroClient.pdf" target="_blank">&#11015; Sample PDF Template for Client</a><br/>
+    <a href="res/exampleDataFromPdf.csv" target="_blank">&#11015; Sample CSV file</a>
+  </div>
+
+  <div id="author" class="noPrint">Designed and coded by: Stanisław Tobolewski<br><a href="mailto:stanislaw.tobolewski@gmail.com">e-mail: stanislaw.tobolewski@gmail.com</a></div>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>

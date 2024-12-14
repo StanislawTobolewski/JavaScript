@@ -1,0 +1,93 @@
+.appContainer{
+	display: flex;
+	width: 100vw;
+	flex-direction: row;
+	justify-content:flex-start;
+}
+  #labelContainer{
+    width:fit-content;
+    height: fit-content;
+  }
+  #label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--label-width);
+    min-width: var(--label-width);
+    height: var(--label-height);
+    min-height: var(--label-height) !important;
+    background-color: var(--label_bg_color);
+    border: 1px solid #c3c3c3;
+  }
+  #labelContentContainer{
+    display:flex ;
+    flex-direction: column;
+    justify-content:space-between;
+    min-width: calc(var(--label-width) - (var(--inner-margin) + var(--bleeds)) * 2);
+    min-height: calc(var(--label-height) - (var(--inner-margin) + var(--bleeds)) * 2);
+    max-width: calc(var(--label-width) - (var(--inner-margin) + var(--bleeds)) * 2);
+    max-height: calc(var(--label-height) - (var(--inner-margin) + var(--bleeds)) * 2);
+    background-color: var(--label_bg_color);
+  }
+  #headerLineOne{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-between;
+  }
+  #Name{
+    font-size: var(--header-01-size);
+    color: var(--header-01-color);
+  }
+  #additionalName{
+    font-size: var(--header-02-size);
+    color: var(--header-02-color);
+  }
+  #logo, #logoContainer{
+    max-width: 2cm;
+    max-height: auto;
+  }
+  #headerLineTwo{
+    text-transform: uppercase;
+    padding-bottom: 2mm;
+  }
+  #content{
+    width: 100%;
+    text-align: justify;
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+  #weightContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #nettWeight{
+    font-size: var(--text-size);
+    margin-bottom: 3mm;
+    margin-right: 3mm;
+    color: var(--weight-color);
+  }
+  #mass{
+    font-size: var(--weight-size);
+    color: var(--weight-color);
+  }
+
+  #footer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #produceForArea{
+    font-size: var(--prod-for-text);
+    color: var(--prod-for-color);
+    margin-left: 0;
+  }
+  #barcode{
+    min-width: var(--barcode-width);
+    max-width: var(--barcode-width);
+    height: auto;
+  }
